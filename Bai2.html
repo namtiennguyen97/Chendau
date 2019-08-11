@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai2:</title>
+</head>
+<body>
+<script>
+    let num= prompt(""); //co the khai bao mac dinh theo cach nay
+    let input = num.toString();
+    let result = [input[0]];
+    for(let x=1; x<input.length; x++)
+    {
+        if((input[x-1]%2 === 0)&&(input[x]%2 === 0))
+        {
+            result.push('-', input[x]);
+        }
+        else
+        {
+            result.push(input[x]);
+        }
+    }
+    alert(result.join(''));
+</script>
+</body>
+</html>
